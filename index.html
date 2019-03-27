@@ -28,7 +28,7 @@
         background: rgb(226, 30, 177);
         padding-bottom: 30%;
         float:left;
-
+        border-radius: 20%;
         margin: 1.66%;
 
     }
@@ -136,7 +136,7 @@
       pickedColor = pickColor();
       colorDisp.textContent = pickedColor;
       reset.textContent = "NEW COLOR";
-
+      message.textContent =  "";
       
       for(var i=0; i<squares.length; i ++){
        squares[i].style.background = colors[i];
@@ -159,6 +159,7 @@
               
             }
           else{
+            
             this.style.background = "#ffffff";
             message.textContent = "TRY AGAIN!!!" 
             message.style.color = clickedColor;
